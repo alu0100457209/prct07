@@ -3,11 +3,14 @@
 import Ejer_Pi
 
 
-valores = (10,100,1000,10000,100000,1000000,10000000,100000000)
+valores = (10,100,1000,10000,100000,1000000,10000000)
+print(' ______________________________')
+print('|     valor    |  aprox de PI  |')
+print('|______________|_______________|')
 for valor in valores:
   y = Ejer_Pi.aproximacion_pi(valor)
-  print valor, y
-  
+  print ('| %10i   | %.10f  |') %(valor, y)
+print('|______________|_______________|')  
   
 # los numero de longitud superiores a 100.000.000, osea, superiores a 9 cifras pruducen un fallo en la memoria
 
